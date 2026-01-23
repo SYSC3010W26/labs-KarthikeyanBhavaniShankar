@@ -19,7 +19,6 @@ firebase = pyrebase.initialize_app(firebaseConfig)
 auth = firebase.auth()
 db = firebase.database()
 
-# Anonymous authentication (required by lab)
 user = auth.sign_in_anonymous()
 
 print("Connected to Firebase.")
